@@ -9,13 +9,6 @@
 #define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
 #define U_STRINGIFY(x) #x
 #define U_MACRO(name,...) \
-
-#define SLEEP_LED_TIMEOUT 60000 // 1 minute
-#define SLEEP_LED_OFF_TIMEOUT 5000 // 5 seconds
-
-#define SLEEP_WAKE_TIMEOUT 500 // 0.5 seconds
-
-
 / { \
   macros { \
     name: name { \
@@ -31,6 +24,10 @@
 #define U_NU &none // available but not used
 
 #define U_TAPPING_TERM 200
+
+#define SLEEP_LED_TIMEOUT 60000 // 1 minute
+#define SLEEP_LED_OFF_TIMEOUT 5000 // 5 seconds
+#define SLEEP_WAKE_TIMEOUT 500 // 0.5 seconds
 
 #include "miryoku_clipboard.h"
 
